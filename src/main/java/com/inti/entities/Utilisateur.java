@@ -43,6 +43,7 @@ public class Utilisateur implements Serializable {
 			inverseJoinColumns = {@JoinColumn(name="id_role", table ="role", 
 			referencedColumnName = "idRole")}			)
 	private Set<Role> listRole = new HashSet<Role>();
+	private String test;
 
 	public Utilisateur() {
 	}
@@ -122,6 +123,14 @@ public class Utilisateur implements Serializable {
 
 	public void setListRole(Set<Role> listRole) {
 		this.listRole = listRole;
+	}
+
+	public String getTest() {
+		return test;
+	}
+
+	public void setTest(String test) {
+		this.test = test;
 	}
 
 }
