@@ -26,7 +26,7 @@ public class Utilisateur implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long idUtilisateur;
+	private Long id;
 	private String nomUtilisateur;
 	private String prenomUtilisateur;
 	@Column(unique = true)
@@ -53,12 +53,14 @@ public class Utilisateur implements Serializable {
 		this.password = password;
 	}
 
-	public Long getIdUtilisateur() {
-		return idUtilisateur;
+	
+
+	public Long getId() {
+		return id;
 	}
 
-	public void setIdUtilisateur(Long idUtilisateur) {
-		this.idUtilisateur = idUtilisateur;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getNomUtilisateur() {
